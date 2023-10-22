@@ -18,5 +18,5 @@ app.use('/api/project', cors(), require('./routes/project'))
 // Start the server
 
 app.listen(process.env.PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server is running on port ${process.env.PORT}`);
 });
