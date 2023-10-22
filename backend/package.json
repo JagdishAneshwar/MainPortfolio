@@ -1,0 +1,29 @@
+{
+  "name": "portfolio-backend",
+  "version": "1.0.0",
+  "description": "Backend code for my portfolio website",
+  "main": "index.js",
+  "scripts": {
+<<<<<<< HEAD
+    "test": "echo \"Error: no test specified\" && exit 1"
+=======
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodmeon index.js",
+    "build": "npm i"
+>>>>>>> 4709fd4 (Add all my files)
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^6.2.0",
+<<<<<<< HEAD
+    "mongoose": "^7.6.3"
+=======
+    "mongoose": "^7.6.3",
+    "nodemon": "^3.0.1"
+>>>>>>> 4709fd4 (Add all my files)
+  }
+}
