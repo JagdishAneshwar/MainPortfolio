@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
 
-export const ProjectState = createContext();
+export const DataContext = createContext();
 
 export const DataProvider = (props) => {
   const [data, setData] = useState([]);
