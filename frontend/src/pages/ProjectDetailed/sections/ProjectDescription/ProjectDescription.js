@@ -1,5 +1,6 @@
 import React from 'react'
 import './projectdescription.css'
+import AddProject from '../../../../Helper/AddProject'
 
 export default function ProjectDescription() {
   return (
@@ -11,7 +12,7 @@ export default function ProjectDescription() {
       <tt>This project is </tt>
     </div>
     <div className="project-description"><h4>features</h4><tt>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam seq</tt></div>
-    <div className="project-description"></div>
+    <div className="project-description"><AddProject/> </div>
     </div>
     </div>
   )
