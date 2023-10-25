@@ -12,7 +12,15 @@ export default function ProjectDescription() {
       <tt>This project is </tt>
     </div>
     <div className="project-description"><h4>features</h4><tt>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam seq</tt></div>
-    <div className="project-description"><AddProject/> </div>
+    <div className="project-description"><AddProject/> <div id="retainable-rss-embed" 
+data-rss="https://medium.com/feed/retainable,
+https://medium.com/feed/vue-mastery"
+data-maxcols="3" 
+data-layout="grid" 
+data-poststyle="inline" 
+data-readmore="Read the rest" 
+data-buttonclass="btn btn-primary" 
+data-offset="-100"></div></div>
     </div>
     </div>
   )
