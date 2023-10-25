@@ -13,8 +13,7 @@ export default function ProjectDescription() {
     </div>
     <div className="project-description"><h4>features</h4><tt>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam seq</tt></div>
     <div className="project-description"><AddProject/> <div id="retainable-rss-embed" 
-data-rss="https://medium.com/feed/retainable,
-https://medium.com/feed/vue-mastery"
+data-rss="https://medium.com/@jagdish_aneshwar"
 data-maxcols="3" 
 data-layout="grid" 
 data-poststyle="inline" 
