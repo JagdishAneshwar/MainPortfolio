@@ -1,0 +1,46 @@
+
+.about{
+    width: 100%;
+    height: 100vh;
+    border-top: 1px solid white;
+}
+
+.about-left{
+    grid-area: 'left-about';
+    width: 50vw;
+    height: 100%;
+    background-image: url("photo.jpg");
+    background-size: cover;
+}
+
+.about-right{
+    grid-area: 'right-about';
+    width: 43.9vw;
+}
+
+.about-wrapper{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+      'left-about right-about';
+    
+}
+
+.about-wrapper > div{
+    border-left: 1px solid white;
+}
+
+.about-title{
+    font-size: 5vw;
+    text-align: center;
+    letter-spacing: 5px;
+    padding-top:10%;
+}
+
+.about-description{
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.5vw;
+    text-align: justify;
+}

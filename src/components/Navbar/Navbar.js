@@ -2,15 +2,14 @@ import React from 'react'
 //import Navlink from './NavLink/Navlink'
 import './navbar.css'
 import PropTypes from 'prop-types'
-import {Link} from 'react-router-dom'
 
 export default function Navbar(props) {
   return (
     <>
     <nav className="navbar navbar-expand-md fixed-top menu-wrapper bg-dark">
-        <Link to="/Home" className="navbar-brand navbar-name "  data-aos="fade-right"><span className="firstname">{props.firstname}</span><span
+        <a className="navbar-brand navbar-name " href="index.html" data-aos="fade-right"><span className="firstname">{props.firstname}</span><span
             className="surname">
-            {props.lastname}</span></Link>
+            {props.lastname}</span></a>
         <ul className="nav me-auto justify-content-end mt-2 mt-lg-0" data-aos="fade-right">
         <li className="nav-item"><a className="btn btn-link menu nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</a></li>
         </ul>

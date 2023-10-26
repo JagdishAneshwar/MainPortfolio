@@ -1,0 +1,42 @@
+.project-wrapper{
+    width:100%;
+    height:100%;
+    
+    border: 1px solid white;
+}
+
+.project-img-wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.project-img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: saturate(80%);
+    filter: brightness(60%);
+}
+.project-img:hover{
+    filter: saturate(110%);
+    filter: brightness(130%);
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 50%;
+  color: white;
+  font-size: 2vw;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+@import url(../../variables.css);
+.navbar {
+    width: 100%;
+    height: 55px;
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+    }
+
+    .navbar-name{
+      position: relative;
+      left: 5%;
+    }
+
+  .firstname {
+    color: white;
+    font-size: var(--navtext);
+    padding-right: 3px;
+  }
+  .surname {
+    color: palegreen;
+    font-size: var(--navtext);
+  }
+
+  .nav {
+    position: absolute;
+    right: 5%;
+  }
+
+  .nav-link {
+    color: white;
+    font-size: calc(0.3rem + 1vw);
+  }
+  .nav-link:hover {
+    color: palegreen;
+  }
+    
+    .menu-wrapper:before {
+      content : "";
+      position: absolute;
+      bottom  : 0;
+      width   : 100%;  /* or 100px */
+      border-bottom:1px solid rgba(255, 255, 255);
+    }
+
+
+  .menu{
+    text-decoration: none;
+    color: white;
+    font-size: var(--navtext);
+    padding: 0;margin: 0;
+    padding-left: 75%;
+    height: 100%;
+  }
+  .menu:before {
+    content : "";
+    position: absolute;
+    left:0;
+    height: 100%;  /* or 100px */
+    border-left:1px solid rgba(255, 255, 255);
+  }
