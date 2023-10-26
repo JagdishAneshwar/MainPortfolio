@@ -10,6 +10,7 @@
 <meta name="title" content="Jagdish Aneshwar | Portfolio | Web Developer" />
 <link rel="canonical" content="https://thejagdish.com/" />
 <meta name="description" content="Jagdish Aneshwar: Transforming ideas into web reality. Discover my portfolio, blog & social channels. Let's connect, collaborate & code!" />
+link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="portfolio" />
@@ -56,6 +57,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+<script type="text/javascript">
+  algoliasearchNetlify({
+    appId: 'ZW6CZ5BHCH',
+    apiKey: '<YOUR_ALGOLIA_SEARCH_API_KEY>',
+    siteId: '0149400a-f9c5-4b12-9c5d-dd7220fde0e4',
+    branch: 'main',
+    selector: 'div#search',
+  });
+</script>
   </body>
 </html>
