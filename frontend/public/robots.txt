@@ -1,3 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+# Algolia-Crawler-Verif: 95D30670D85BCAE9
