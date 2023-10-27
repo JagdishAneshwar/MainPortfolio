@@ -11,7 +11,7 @@ export default function SocialLinks() {
 
 <div className="offcanvas social-wrapper offcanvas-start bg-dark"data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions1" aria-labelledby="offcanvasWithBothOptionsLabel">
     <div className="icon-wrapper">
-    <div class="icons8-github" href="https://github.com/JagdishAneshwar"></div>
+    <a class="icons8-github" href="https://github.com/JagdishAneshwar"></a>
     </div>
     <div className="icon-wrapper">
     <div class="icons8-whatsapp" href="https://wa.link/91sbjb"></div>
