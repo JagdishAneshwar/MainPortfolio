@@ -15,6 +15,8 @@ const ProjectState = (props) =>{
             method: "GET",
             headers: {
               "Content-Type": "application/json",
+              "Access-Control-Allow-Origin": "*"
+
             },
           }
         );
@@ -24,7 +26,8 @@ const ProjectState = (props) =>{
 
 
       const toProjectDetailed = async (project, navigate) =>{
-        navigate(`/ProjectDetails`, {
+        console.log("component",project.caption)
+        navigate(`/ProjectDetail`, {
           state: {
             id:project._id,
             projectName:project.projectName,
@@ -34,8 +37,11 @@ const ProjectState = (props) =>{
             technology:project.technology,
             webpageLink:project.webpageLink,
             gitRepoLink:project.gitRepoLink,
+            caption:project.caption,
             mediumArticleLink:project.mediumArticleLink,
-            projectImage:project.projectImage
+            projectImagesDesktop:project.projectImagesDesktop,
+            projectImagesMobile:project.projectImagesMobile,
+            thumbnail:project.thumbnail
           },
         });
       }

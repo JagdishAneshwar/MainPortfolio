@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 
 // Connect to MongoDB Atlas
-mongoose.connect(process.env.MOONGODB_URL, {
+mongoose.connect('mongodb+srv://aneshwarjagdish:FbhOWfhjTmQMeDe6@trendy.m4fetu3.mongodb.net/?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

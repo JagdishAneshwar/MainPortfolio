@@ -1,6 +1,6 @@
 .projects-section{
     width: 100%;
-    height: 130vh;
+    height: auto;
     background: white;
     color:black;
 }
@@ -11,10 +11,10 @@
     background: #ffffff;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr); 
+    /* grid-template-rows: repeat(2, 1fr);  */
 }
 
-.projects-title{
+.projects-main-title{
     font-size: 5vw;
     text-align: center;
     background-color: white;

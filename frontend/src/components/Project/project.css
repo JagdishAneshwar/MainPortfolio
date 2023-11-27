@@ -1,42 +1,58 @@
-.project-wrapper{
-    width:100%;
-    height:100%;
-    
-    border: 1px solid white;
-}
-
-.project-img-wrapper{
+.project-wrapper {
     width: 100%;
     height: 100%;
+    border: 1px solid white;
+    margin-bottom: 5%;
 }
 
-.project-img{
+.project-img-wrapper {
+    width: 100%;
+    height: 28.61vw;
+    overflow: hidden;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+.project-img {
     width: 100%;
     height: 100%;
     background-size: cover;
+    background-repeat: no-repeat;
     filter: saturate(80%);
     filter: brightness(60%);
+    transition: transform 0.3s ease-in-out; /* Add transition for a smooth effect */
 }
-.project-img:hover{
+
+.project-img-wrapper:hover .project-img {
     filter: saturate(110%);
     filter: brightness(130%);
+    transform: scale(1.02, 1.02); /* Increase the size by 10% for both X and Y axes */
 }
 
 .project-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  bottom: 50%;
-  color: white;
-  font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    width: 94%;
+    color: black;
+    font-size: 2vw;
+    padding-top: 2%;
+    border-bottom: 1px solid black;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
+.overview-info{
+    width: 100%;height: 250px;
+    border: 1px solid black;
+    border-top: none;
+}
 
-
-
-
+.project-overview-description{
+    padding: 2%;
+    padding-left: 3%;
+}
 
 

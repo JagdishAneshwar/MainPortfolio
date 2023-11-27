@@ -1,0 +1,34 @@
+.new-about-section{
+    width: 100%;
+    height:100vh;
+    background: black;
+}
+
+.new-about-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.new-about-title-section{
+    width: 30%;
+    height: 100%;
+    color: black;
+    background: white;
+    padding: 5%;
+}
+
+.new-about-title-section h2{
+    font-size: 5vw;
+}
+
+.new-about-description{
+    position: relative;
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    font-size: calc(1vw + 10px);
+    border: 1px solid white;
+}
+    

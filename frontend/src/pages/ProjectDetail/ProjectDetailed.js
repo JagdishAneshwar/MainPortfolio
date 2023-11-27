@@ -7,9 +7,27 @@ import ProjectDescription from './sections/ProjectDescription/ProjectDescription
 import Footer from '../../sections/FooterSection/FooterSec'
 import { useLocation } from "react-router-dom";
 
-export default function ProjectDetailed({project}) {
+export default function ProjectDetailed() {
   const location = useLocation();
-  const {id,projectName,
+  const {_id,
+    projectName,
+    projectDescription,
+    date,
+    features,
+    technology,
+    webpageLink,
+    caption,
+    gitRepoLink,
+    mediumArticleLink,
+    projectImagesDesktop,
+    projectImagesMobile,
+    thumbnail} = location.state;
+  return (
+    <div className='project-detailed-page'>
+    <Navbar/>
+    
+    <HeroSec desktopImg={projectImagesDesktop} mobileImg={projectImagesMobile} caption={caption} id={_id} />
+    <ProjectDescription project={{_id,projectName,
     projectDescription,
     date,
     features,
@@ -17,21 +35,12 @@ export default function ProjectDetailed({project}) {
     webpageLink,
     gitRepoLink,
     mediumArticleLink,
-    projectImage} = location.state;
-  return (
-    <div className='project-detailed-page'>
-    <Navbar/>
-    <SocialLinks/>
-    <HeroSec img={projectImage} />
-    <ProjectDescription project={{id,projectName,
-    projectDescription,
-    date,
-    features,
-    technology,
-    webpageLink,
-    gitRepoLink,
-    mediumArticleLink}} />
-    <Footer/>
+    caption,
+    projectImagesDesktop,
+      projectImagesMobile,
+      thumbnail
+    }} />
+    <Footer color="black" bg="white"   />
     </div>
   )
 }

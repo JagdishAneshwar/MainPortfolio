@@ -1,21 +1,25 @@
 
 
 .social-widget{
-    max-width: 5vw;
-    height: auto;
+    max-width: 5.5vw;
+    min-width: 30px;
+    min-height: 100vh;
     padding-top: 60px;
     position: fixed;
     left: 0px;
+    top:0px;
     z-index: 10;
-    border-bottom: 1px solid white;
+    border-right: 1px solid white !important;    
 }
 
 .footer-title{
     text-align: center;
-    letter-spacing: 1px;
+    
 }
 .social-wrapper{
-    width: 5vw;height: 100%;
+    width: calc(5vw + 10px);height: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
     display: flex;position: fixed;top: 0px;
     border: 1px solid white;
     justify-content: space-evenly;
@@ -73,3 +77,15 @@
                 height: 50px;
                 background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAsMCwyNTYsMjU2IgpzdHlsZT0iZmlsbDojMDAwMDAwOyI+CjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxnIHRyYW5zZm9ybT0ic2NhbGUoNCw0KSI+PHBhdGggZD0iTTE4Ljk5ODA1LDE1Yy05LjM3NDMxLDAuMDIyMDQgLTE2Ljk2MjAyLDcuNjI3NjIgLTE2Ljk2MjAyLDE3LjAwMTk1YzAsOS4zNzQzNCA3LjU4NzcxLDE2Ljk3OTkxIDE2Ljk2MjAyLDE3LjAwMTk1YzkuMzc0MzEsLTAuMDIyMDQgMTYuOTYyMDIsLTcuNjI3NjIgMTYuOTYyMDIsLTE3LjAwMTk1YzAsLTkuMzc0MzQgLTcuNTg3NzEsLTE2Ljk3OTkxIC0xNi45NjIwMiwtMTcuMDAxOTV6TTQ1LjQ5ODA1LDE2Yy00LjY4NzQ3LDAuMDIxMzggLTguNDgxMzksNy4xNzk0MyAtOC40ODEzOSwxNi4wMDE5NWMwLDguODIyNTIgMy43OTM5MywxNS45ODA1NyA4LjQ4MTM5LDE2LjAwMTk1YzQuNjg3NDcsLTAuMDIxMzggOC40ODEzOSwtNy4xNzk0MyA4LjQ4MTM5LC0xNi4wMDE5NWMwLC04LjgyMjUyIC0zLjc5MzkzLC0xNS45ODA1NyAtOC40ODEzOSwtMTYuMDAxOTV6TTU4LjUsMTdjLTEuMjUyNTEsLTAuMDEzNDQgLTIuNDExMjMsMi44NDI5NyAtMy4wMzgzOSw3LjQ5MDEyYy0wLjYyNzE2LDQuNjQ3MTQgLTAuNjI3MTYsMTAuMzc2NTQgMCwxNS4wMjM2OGMwLjYyNzE2LDQuNjQ3MTQgMS43ODU4OCw3LjUwMzU1IDMuMDM4MzksNy40OTAxMmMxLjI1MjUxLDAuMDEzNDQgMi40MTEyMywtMi44NDI5NyAzLjAzODM5LC03LjQ5MDEyYzAuNjI3MTYsLTQuNjQ3MTQgMC42MjcxNiwtMTAuMzc2NTQgMCwtMTUuMDIzNjhjLTAuNjI3MTYsLTQuNjQ3MTQgLTEuNzg1ODgsLTcuNTAzNTUgLTMuMDM4MzksLTcuNDkwMTJ6Ij48L3BhdGg+PC9nPjwvZz4KPC9zdmc+') 50% 50% no-repeat;
                 background-size: 100%; }
+
+
+
+
+
+
+
+
+
+
+
+

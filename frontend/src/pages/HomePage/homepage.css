@@ -1,0 +1,49 @@
+.Main {
+    /* Add any common styles for the main container if needed */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .flex-container {
+    display: flex;
+  }
+  
+  .vertical-social-links {
+    /* Adjust the width of the social links container as needed */
+    width: 5.5vw;
+  }
+  
+  .content-container {
+    /* Allow the content to take the remaining width */
+    flex-grow: 1;
+     /* Adjust as needed for spacing between social links and content */
+  }
+  .largeCursor {
+    z-index: 10;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition:0.1s;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    top: 0;
+  }
+
+
+
+
+  .smallCursor {
+    z-index: 10;
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: green;
+    transition:0.1s;
+    top: 5px;
+  }
+  /* Add styles for other sections as needed */
+  

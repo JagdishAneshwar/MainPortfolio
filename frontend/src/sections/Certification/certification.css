@@ -1,0 +1,69 @@
+        .certification-section{
+            width: 100%;
+            height: fit-content;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            padding: 3%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .certification-title-wrapper{
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .certification-section > h2{
+            width: 100%;
+            text-align: center;
+            padding-bottom: 2%;
+            border-bottom: 1px solid black;
+            overflow: hidden;
+            line-height: 100%;
+        }
+
+        #header p{
+            opacity: 0.5;
+            overflow: hidden;
+        }
+
+
+        .certification-wrapper{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .certifications{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #header{
+            cursor: default;
+        }
+        @media (max-width: 600px) {
+            .certification-title,
+            .certification-issued-by {
+            display: none;
+            }
+        }
+        
+        .certification:hover .certification-image-reveal {
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+        .certification:hover .certification-title,
+        .certification:hover .certification-issued-date,
+        .certification:hover .certification-issued-by,
+        .certification:hover .certification-link {
+            color: #0066cc; /* Change the color as per your preference */
+        }

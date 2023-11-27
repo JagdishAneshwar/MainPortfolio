@@ -10,8 +10,13 @@ export default function Project({project}) {
   
   return (
     <div className='project-wrapper' onClick={() => { toProjectDetailed(project, navigate);}}>
+    
         <div className="project-img-wrapper">
-            <div className="project-img" style={{backgroundImage:  `url(${project.projectImage})`}}><h3 className='project-title'>{project.projectName}</h3></div>
+            <div className="project-img" style={{backgroundImage:  `url(${project.thumbnail})`}}></div>
+        </div>
+        <div className="overview-info">
+        <h3 className='project-title'>{project.projectName}</h3>
+        <div className="project-overview-description"><tt>{project.projectDescription}</tt></div>
         </div>
     </div>
   )

@@ -1,18 +1,36 @@
-import React from 'react'
-//import Navlink from './NavLink/Navlink'
-import './navbar.css'
-import PropTypes from 'prop-types'
-import {Link} from 'react-router-dom'
+import React, { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
+import { gsap } from 'gsap';
+import PropTypes from 'prop-types';
+import './navbar.css';
 
 export default function Navbar(props) {
+  const navName = useRef(null);
+  const menuName = useRef(null);
+
+  useEffect(()=>{
+    gsap.to(navName.current, {
+      y: 0,
+      delay: 1,
+      duration: 1,
+    });
+
+
+    gsap.to(menuName.current, {
+      y: 0,
+      delay: 2,
+      duration: 1
+    });
+  })
+
   return (
     <>
-    <nav className="navbar navbar-expand-md fixed-top menu-wrapper bg-dark">
-        <Link to="/Home" className="navbar-brand navbar-name "  data-aos="fade-right"><span className="firstname">{props.firstname}</span><span
+    <nav className="navbar navbar-expand-md fixed-top menu-wrapper">
+        <Link to="/Home" className="navbar-brand navbar-name "  data-aos="fade-right" ref={navName}><span className="firstname">{props.firstname}</span><span
             className="surname">
             {props.lastname}</span></Link>
         <ul className="nav me-auto justify-content-end mt-2 mt-lg-0" data-aos="fade-right">
-        <li className="nav-item"><a className="btn btn-link menu nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</a></li>
+        <li className="nav-item"><a className="btn btn-link menu nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" ref={menuName}>Menu</a></li>
         </ul>
       </nav>
       <div class="offcanvas offcanvas-end add" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">

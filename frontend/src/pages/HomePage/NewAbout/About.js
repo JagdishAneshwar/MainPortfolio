@@ -1,15 +1,16 @@
 import React from 'react'
-import './sociallinks.css'
+import './newabout.css'
 
-export default function SocialLinks() {
+export default function About() {
   return (
-    <>
-    
-    <a className="social-widget btn btn-primary bg-dark border-0 footer-title title-social-links" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions1" aria-controls="offcanvasWithBothOptions">Social Links</a>
-
-
-
-<div className="offcanvas social-wrapper offcanvas-start bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions1" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <section className='new-about-section'>
+    <div className="new-about-wrapper">
+      <div className="new-about-title-section">
+        <h2>About.</h2>
+      </div>
+      <div className="new-about-description">
+        <p><tt>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam quos inventore minus rem corrupti similique omnis, velit cumque quisquam maiores ullam aut in recusandae explicabo facilis eveniet. Placeat, animi alias.</tt></p>
+        <div className="social-share" >
     <div className="icon-wrapper">
     <a class="icons8-github" href="https://github.com/JagdishAneshwar"></a>
     </div>
@@ -28,6 +29,9 @@ export default function SocialLinks() {
     <div className="icon-wrapper">
     <a class="icons8-medium" href="https://medium.com/@jagdish_aneshwar"></a>
     </div>
-</div></>
+</div>
+      </div>
+    </div>
+    </section>
   )
 }
