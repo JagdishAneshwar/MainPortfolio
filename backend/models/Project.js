@@ -8,6 +8,9 @@ const projectSchema = new mongoose.Schema({
     technology: String,
     webpageLink: String,
     gitRepoLink: String,
+    installation:String,
+    backend:String,
+    frontend:String,
     mediumArticleLink: String,
     projectImage: String,
   });
