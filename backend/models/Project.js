@@ -11,8 +11,11 @@ const projectSchema = new mongoose.Schema({
     installation:String,
     backend:String,
     frontend:String,
+    caption:String,
     mediumArticleLink: String,
-    projectImage: String,
+    projectImagesDesktop: String,
+    projectImagesMobile:String,
+    thumbnail:String,
   });
 
   module.exports = mongoose.model('project', projectSchema)
