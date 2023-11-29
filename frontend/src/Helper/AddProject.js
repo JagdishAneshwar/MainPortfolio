@@ -4,15 +4,21 @@ import './addproject.css';
 
 export default function AddProject() {
   const [formData, setFormData] = useState({
-    projectName: '',
-    projectDescription: '',
-    date: '',
-    features: '',
-    technology: '',
-    webpageLink: '',
-    gitRepoLink: '',
-    mediumArticleLink: '',
-    projectImage: ''
+      projectName:'',
+      projectDescription:'',
+      date:'',
+      features:'',
+      technology:'',
+      webpageLink:'',
+      installation:'',
+      backend:'',
+      frontend:'',
+      gitRepoLink:'',
+      mediumArticleLink:'',
+      projectImagesDesktop:'',
+      projectImagesMobile:'',
+      thumbnail:'',
+      caption:''
   });
 
   const handleInputChange = (event) => {
