@@ -15,7 +15,10 @@ router.post('/submit', async (req, res) => {
       frontend,
       gitRepoLink,
       mediumArticleLink,
-      projectImage,
+      projectImagesDesktop,
+      projectImagesMobile,
+      thumbnail,
+      caption
     } = req.body;
     try {
     const newProject = new Project({
@@ -25,12 +28,15 @@ router.post('/submit', async (req, res) => {
       features,
       technology,
       webpageLink,
-      gitRepoLink,
       installation,
       backend,
       frontend,
+      gitRepoLink,
       mediumArticleLink,
-      projectImage,
+      projectImagesDesktop,
+      projectImagesMobile,
+      thumbnail,
+      caption
     });
 
     console.log(newProject)
