@@ -16,7 +16,9 @@ export default function Certification() {
   useEffect(()=>{
     const certificateTitle = new SplitType(certificateRef.current, { types: 'chars' });
     console.log(certificateHeader)
-    gsap.from(certificateTitle.chars, {
+    const tl = gsap.timeline();
+
+    tl.from(certificateTitle.chars, {
       y: 800,
       opacity: 0,
       duration: 2,
