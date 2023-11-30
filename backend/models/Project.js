@@ -11,10 +11,10 @@ const projectSchema = new mongoose.Schema({
     installation:String,
     backend:String,
     frontend:String,
-    caption:String,
+    caption:[String],
     mediumArticleLink: String,
-    projectImagesDesktop: String,
-    projectImagesMobile:String,
+    projectImagesDesktop: [String],
+    projectImagesMobile:[String],
     thumbnail:String,
   });
 

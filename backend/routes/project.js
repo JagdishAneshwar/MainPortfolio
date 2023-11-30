@@ -52,7 +52,7 @@ router.post('/submit', async (req, res) => {
 router.get('/projectDetails', async (req, res) => {
       try {
         const projects = await Project.find();
-        console.log(projects)
+        
         res.status(200).json(projects);
       } catch (error) {
         console.error('Error while fetching project details:', error);

@@ -11,7 +11,7 @@
     getProject();
   })
 
-
+console.log(projects,"projecrs")
     return (
       <>
       <div className="projects-main-title">

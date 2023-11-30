@@ -10,7 +10,7 @@ const ProjectState = (props) =>{
     const getProject = async () => {
         
         const response = await fetch(
-          "https://portfolio-bfn4.onrender.com/api/project/projectDetails",
+          "http://localhost:5000/api/project/projectDetails",
           {
             method: "GET",
             headers: {
@@ -21,12 +21,13 @@ const ProjectState = (props) =>{
           }
         );
         const json = await response.json();
+        console.log(json)
         setProject(json);
       };
 
 
       const toProjectDetailed = async (project, navigate) =>{
-        console.log("component",project.caption)
+        console.log("component",project)
         navigate(`/ProjectDetail`, {
           state: {
             id:project._id,
@@ -38,6 +39,9 @@ const ProjectState = (props) =>{
             webpageLink:project.webpageLink,
             gitRepoLink:project.gitRepoLink,
             caption:project.caption,
+            installation:project.installation,
+            backend:project.backend,
+            frontend:project.frontend,
             mediumArticleLink:project.mediumArticleLink,
             projectImagesDesktop:project.projectImagesDesktop,
             projectImagesMobile:project.projectImagesMobile,

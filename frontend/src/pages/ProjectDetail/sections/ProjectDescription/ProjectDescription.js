@@ -2,7 +2,7 @@ import React,{useRef, useEffect} from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
-import './projectdescription.css'
+import './projectdescription.css';
 gsap.registerPlugin(ScrollTrigger)
 
 // import AddProject from '../../../../Helper/AddProject'
@@ -16,7 +16,14 @@ export default function ProjectDescription({project}) {
   const projectDetailedTechnologyRef = useRef(null)
   const projectDetailedFeatureTitleRef = useRef(null)
   const projectDetailedTechnologyTitleRef = useRef(null)
+  const projectDetailedInstallationTitleRef = useRef(null)
+  const projectDetailedInstallatioRef = useRef(null)
+  const projectDetailedBackendTitleRef = useRef(null)
+  const projectDetailedFrontendTitleRef = useRef(null)
+  const projectDetailedFrontendRef = useRef(null)
+  const projectDetailedBackendRef = useRef(null)
 
+console.log(project,"install")
   useEffect(()=>{
     const projectDetailedTitle = new SplitType(projectDetailedTitleRef.current, { types: 'chars' });
     gsap.from(projectDetailedTitle.chars, {
@@ -28,7 +35,7 @@ export default function ProjectDescription({project}) {
         trigger: projectDetailedTitleRef.current,
         start: 'top 110%',
         end: 'top 20%',
-        toggleActions: 'play none none reverse',
+        toggleActions: 'play none none none',
       },
     });
 
@@ -42,7 +49,7 @@ export default function ProjectDescription({project}) {
         trigger: projectDetailedDateRef.current,
         start: 'top 110%',
         end: 'top 20%',
-        toggleActions: 'play none none reverse',
+        toggleActions: 'play none none none',
       },
     });
 
@@ -57,7 +64,22 @@ export default function ProjectDescription({project}) {
         trigger: projectDetailedDescriptionRef.current,
         start: 'top 100%',
         end: 'top 20%',
-        toggleActions: 'play none none reverse',
+        toggleActions: 'play none none none',
+      },
+    });
+
+    const projectDetailedInstallation= new SplitType(projectDetailedInstallatioRef.current, { types: 'lines' });
+    gsap.from(projectDetailedInstallation.lines, {
+      y: 100,
+      opacity: 0,
+      delay:1.5,
+      duration: 1.8,
+      stagger: 0.1,
+      scrollTrigger: {
+        trigger: projectDetailedInstallatioRef.current,
+        start: 'top 100%',
+        end: 'top 20%',
+        toggleActions: 'play none none none',
       },
     });
 
@@ -72,7 +94,7 @@ export default function ProjectDescription({project}) {
         trigger: projectDetailedFeatureRef.current,
         start: 'top 100%',
         end: 'top 20%',
-        toggleActions: 'play none none reverse',
+        toggleActions: 'play none none none',
       },
     });
 
@@ -88,7 +110,7 @@ export default function ProjectDescription({project}) {
         trigger: projectDetailedTechnologyRef.current,
         start: 'top 120%',
         end: 'top 20%',
-        toggleActions: 'play none none reverse',
+        toggleActions: 'play none none none',
       },
     });
 
@@ -103,7 +125,22 @@ export default function ProjectDescription({project}) {
         trigger: projectDetailedTechnologyTitleRef.current,
         start: 'top 100%',
         end: 'top 20%',
-        toggleActions: 'play none none reverse',
+        toggleActions: 'play none none none',
+      },
+    });
+
+    const projectDetailedInstallationTitle = new SplitType(projectDetailedInstallationTitleRef.current, { types: 'lines' });
+    gsap.from(projectDetailedInstallationTitle.lines, {
+      y: 100,
+      opacity: 0,
+      delay:2.5,
+      duration: 1.5,
+      stagger: 0.1,
+      scrollTrigger: {
+        trigger: projectDetailedInstallationTitleRef.current,
+        start: 'top 100%',
+        end: 'top 20%',
+        toggleActions: 'play none none none',
       },
     });
 
@@ -118,7 +155,37 @@ export default function ProjectDescription({project}) {
         trigger: projectDetailedFeatureTitleRef.current,
         start: 'top 120%',
         end: 'top 20%',
-        toggleActions: 'play none none reverse',
+        toggleActions: 'play none none none',
+      },
+    });
+
+    const projectDetailedBackendTitle = new SplitType(projectDetailedBackendRef.current, { types: 'lines' });
+    gsap.from(projectDetailedBackendTitle.lines, {
+      y: 100,
+      opacity: 0,
+      delay:2.5,
+      duration: 1.5,
+      stagger: 0.1,
+      scrollTrigger: {
+        trigger: projectDetailedBackendRef.current,
+        start: 'top 120%',
+        end: 'top 20%',
+        toggleActions: 'play none none none',
+      },
+    });
+
+    const projectDetailedFrontendTitle = new SplitType(projectDetailedFrontendRef.current, { types: 'lines' });
+    gsap.from(projectDetailedFrontendTitle.lines, {
+      y: 100,
+      opacity: 0,
+      delay:2.5,
+      duration: 1.5,
+      stagger: 0.1,
+      scrollTrigger: {
+        trigger: projectDetailedFrontendRef.current,
+        start: 'top 120%',
+        end: 'top 20%',
+        toggleActions: 'play none none none',
       },
     });
 
@@ -134,10 +201,14 @@ export default function ProjectDescription({project}) {
       <tt className="project-detailed-description" ref={projectDetailedDescriptionRef}>{project.projectDescription}</tt>
     </div>
     <div className="project-description"><h4 ref={projectDetailedFeatureTitleRef}>features</h4><tt ref={projectDetailedFeatureRef}>{project.features}</tt></div>
+    <div className="project-description"><h4 ref={projectDetailedInstallationTitleRef}>Installation</h4><tt ref={projectDetailedInstallatioRef}>{project.installation}</tt></div>
+    <div className="project-description"><h4 ref={projectDetailedBackendTitleRef}>Backend Setup</h4><tt ref={projectDetailedBackendRef}>{project.backend}</tt></div>
+    <div className="project-description"><h4 ref={projectDetailedFrontendTitleRef}>Frontend Setup</h4><tt ref={projectDetailedFrontendRef}>{project.frontend}</tt></div>
     <div className="project-description"><h4 ref={projectDetailedTechnologyTitleRef}>Technology</h4><tt ref={projectDetailedTechnologyRef}>{project.technology}</tt></div>
     </div>
 
     </div>
   )
 }
+
 

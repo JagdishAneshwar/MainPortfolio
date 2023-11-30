@@ -2,7 +2,7 @@ import React from 'react'
 import './herose.css'
 
 export default function HeroSec({desktopImg,caption, mobileImg, id}) {
-  console.log(caption,desktopImg,mobileImg)
+  
   return (
     <div className='pd-hero-sec' key={id}>
     <div className="pd-hero-img-wrapper">

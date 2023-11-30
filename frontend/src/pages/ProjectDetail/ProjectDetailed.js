@@ -1,13 +1,16 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './projectdetailed.css'
 import HeroSec from './sections/HeroSec/HeroSec'
 import Navbar from '../../components/Navbar/Navbar'
-import SocialLinks from '../../components/SocialLinks/SocialLinks'
 import ProjectDescription from './sections/ProjectDescription/ProjectDescription'
 import Footer from '../../sections/FooterSection/FooterSec'
 import { useLocation } from "react-router-dom";
 
 export default function ProjectDetailed() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+  
   const location = useLocation();
   const {_id,
     projectName,
@@ -16,12 +19,18 @@ export default function ProjectDetailed() {
     features,
     technology,
     webpageLink,
+    installation,
     caption,
     gitRepoLink,
     mediumArticleLink,
+    backend,
+    frontend,
     projectImagesDesktop,
     projectImagesMobile,
     thumbnail} = location.state;
+
+
+
   return (
     <div className='project-detailed-page'>
     <Navbar/>
@@ -36,6 +45,9 @@ export default function ProjectDetailed() {
     gitRepoLink,
     mediumArticleLink,
     caption,
+    frontend,
+    backend,
+    installation,
     projectImagesDesktop,
       projectImagesMobile,
       thumbnail
