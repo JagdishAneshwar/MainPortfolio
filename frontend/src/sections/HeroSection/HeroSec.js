@@ -47,12 +47,12 @@ export default function HeroSec() {
       <div className="hero-text-wrapper">
         <div className="row">
           <div className="hero-row hero-name" ref={textRef}>
-            jagdish aneshwar
+            <p>jagdish aneshwar</p>
           </div>
         </div>
         <div className="row">
           <div className="hero-row hero-field" ref={textRef}>
-            Fullstack Developer
+            <p>Fullstack Developer</p>
           </div>
         </div>
       </div>
