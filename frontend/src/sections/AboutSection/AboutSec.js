@@ -76,6 +76,7 @@ export default function AboutSec() {
         },
       });
     });
+    ScrollTrigger.refresh();
   }, []);
 
   return (

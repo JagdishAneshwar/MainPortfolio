@@ -21,13 +21,11 @@ const ProjectState = (props) =>{
           }
         );
         const json = await response.json();
-        console.log(json)
         setProject(json);
       };
 
 
       const toProjectDetailed = async (project, navigate) =>{
-        console.log("component",project)
         navigate(`/ProjectDetail`, {
           state: {
             id:project._id,
