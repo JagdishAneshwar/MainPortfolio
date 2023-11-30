@@ -2,9 +2,12 @@ import React,{useRef, useEffect} from 'react';
 import Certificate from '../../components/widget/certificate/Certificate'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import './certification.css'
 import SplitType from 'split-type';
-gsap.registerPlugin(ScrollTrigger)
+import './certification.css';
+console.log('Before registering ScrollTrigger:', gsap);
+gsap.registerPlugin(ScrollTrigger);
+console.log('After registering ScrollTrigger:', gsap);
+
 
 export default function Certification() {
   const certificateRef=useRef(null)
@@ -43,7 +46,7 @@ export default function Certification() {
     });
 
 
-  })
+  },[])
       const certificationData = [
         {
           imageSrc: 'https://ik.imagekit.io/Jagdish/data%20Analysis%20by%20IBM_page-0001.jpg?updatedAt=1699033825351',
