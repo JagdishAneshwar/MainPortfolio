@@ -1,7 +1,7 @@
 import React,{useRef, useEffect} from 'react';
 import Certificate from '../../components/widget/certificate/Certificate'
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import gsap from "gsap/dist/gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import SplitType from 'split-type';
 import './certification.css';
 console.log('Before registering ScrollTrigger:', gsap);
