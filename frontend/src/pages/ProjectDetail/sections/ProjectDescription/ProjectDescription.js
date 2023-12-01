@@ -23,7 +23,7 @@ export default function ProjectDescription({project}) {
   const projectDetailedFrontendRef = useRef(null)
   const projectDetailedBackendRef = useRef(null)
 
-console.log(project,"install")
+
   useEffect(()=>{
     const projectDetailedTitle = new SplitType(projectDetailedTitleRef.current, { types: 'chars' });
     gsap.from(projectDetailedTitle.chars, {
