@@ -10,7 +10,7 @@ const ProjectState = (props) =>{
     const getProject = async () => {
         
         const response = await fetch(
-          "http://localhost:5000/api/project/projectDetails",
+          "https://portfolio-bfn4.onrender.com/api/project/projectDetails",
           {
             method: "GET",
             headers: {
