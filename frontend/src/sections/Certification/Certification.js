@@ -3,7 +3,8 @@ import Certificate from '../../components/widget/certificate/Certificate'
 import SplitType from 'split-type';
 import './certification.css';
 import gsap from "gsap/dist/gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import {ScrollTrigger} from "gsap/dist/ScrollTrigger";
+console.log(ScrollTrigger)
 gsap.registerPlugin(ScrollTrigger);
 
 
