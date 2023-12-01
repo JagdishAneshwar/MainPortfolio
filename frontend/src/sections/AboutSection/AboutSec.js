@@ -1,9 +1,11 @@
   import React, { useRef, useEffect } from 'react';
-  import gsap from "gsap";
-  import {ScrollTrigger} from "gsap/ScrollTrigger";
   import SplitType from 'split-type';
   import './about.css';
+  import gsap from "gsap";
+  import {ScrollTrigger} from "gsap/ScrollTrigger";
   gsap.registerPlugin(ScrollTrigger)
+
+  
   
 
 
