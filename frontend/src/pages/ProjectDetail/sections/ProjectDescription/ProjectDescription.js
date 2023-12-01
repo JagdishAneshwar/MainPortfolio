@@ -3,12 +3,13 @@ import gsap from "gsap/dist/gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import SplitType from 'split-type';
 import './projectdescription.css';
-gsap.registerPlugin(ScrollTrigger)
+
 
 // import AddProject from '../../../../Helper/AddProject'
 
 
 export default function ProjectDescription({project}) {
+  gsap.registerPlugin(ScrollTrigger)
   const projectDetailedTitleRef = useRef(null)
   const projectDetailedDateRef = useRef(null)
   const projectDetailedDescriptionRef = useRef(null)
