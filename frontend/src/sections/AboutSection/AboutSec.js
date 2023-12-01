@@ -1,10 +1,10 @@
   import React, { useRef, useEffect } from 'react';
   import gsap from "gsap";
-  import ScrollTrigger from "gsap/ScrollTrigger";
+  import {ScrollTrigger} from "gsap/ScrollTrigger";
   import SplitType from 'split-type';
   import './about.css';
-
-  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger)
+  
 
 
   export default function AboutSec() {
