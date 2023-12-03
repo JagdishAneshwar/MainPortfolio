@@ -16,11 +16,11 @@ export default function Navbar(props) {
     });
 
 
- \\   gsap.to(menuName.current, {
-  \\    y: 0,
-  \\    delay: 2,
-  \\    duration: 1
-  \\  });
+ //   gsap.to(menuName.current, {
+ //    y: 0,
+ //    delay: 2,
+ //    duration: 1
+ //  });
   })
 
   return (
