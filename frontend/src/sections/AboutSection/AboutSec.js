@@ -1,16 +1,9 @@
   import React, { useRef, useEffect } from 'react';
   import SplitType from 'split-type';
   import './about.css';
- import Pdf from "Jagdish_Aneshwar.pdf";
   import gsap from "gsap";
   import {ScrollTrigger} from "gsap/ScrollTrigger";
   gsap.registerPlugin(ScrollTrigger)
-
- 
-onResumeClick() {
-  window.open(Pdf);
-}
-  
 
 
   export default function AboutSec() {
@@ -116,7 +109,7 @@ onResumeClick() {
                 <a className="icon header-icons-linkedin" href="https://www.linkedin.com/in/jagdish-aneshwar/" target="_blank" rel="noreferrer" ref={shareIconRefs.current[3]}></a>
               </div>
               <div className="icon-wrapper">
-                 <a className="icon header-icons-resume" target="_blank" rel="noreferrer" ref={shareIconRefs.current[4]} onClick={this.onResumeClick}>Resume</a>
+                 <a className="icon header-icons-resume" href={require('Jagdish_Aneshwar.pdf')} target="_blank" rel="noreferrer" ref={shareIconRefs.current[4]}>Resume</a>
               </div>
             </div>
           </div>
