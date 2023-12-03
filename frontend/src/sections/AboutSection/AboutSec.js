@@ -95,7 +95,7 @@
             </p>
             <tt>
               <p className='about-description' ref={aboutDescRef}>
-                Hello, my name is Jagdish Aneshwar & I'm a Computer Science graduate from Thakur College Of Science and Commerce. I wanted to specialize in the field of Web Development and User Interactivity.
+                Hello, my name is Jagdish Aneshwar & I'm a Computer Science graduate from Thakur College Of Science and Commerce. I've knowleged in Fullstack Development & Data Science. Which primarily includes, but not limited to my skills in Python, Django, MoongoDB, JS, and AWS. Currently working as frontend web developer, Looking for opportunity to work with the company where i can add value and take challenges in building innovative digital solutions.
               </p>
             </tt>
             <div className="social-share">
@@ -110,6 +110,9 @@
               </div>
               <div className="icon-wrapper">
                 <a className="icon header-icons-linkedin" href="https://www.linkedin.com/in/jagdish-aneshwar/" target="_blank" rel="noreferrer" ref={shareIconRefs.current[3]}></a>
+              </div>
+              <div className="icon-wrapper">
+                <a className="icon header-icons-resume" src="Jagdish_Aneshwar.pdf" target="_blank" rel="noreferrer" ref={shareIconRefs.current[4]}>Resume</a>
               </div>
             </div>
           </div>
