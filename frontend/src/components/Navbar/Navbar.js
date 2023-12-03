@@ -31,7 +31,7 @@ export default function Navbar(props) {
             {props.lastname}</span></Link>
           {/* <ul className="nav me-auto justify-content-end mt-2 mt-lg-0" data-aos="fade-right">
         <li className="nav-item"><a className="btn btn-link menu nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" ref={menuName}>Menu</a></li>
-        </ul> /*}
+        </ul> */}
       </nav>
   {/*  <div class="offcanvas offcanvas-end add" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
     <div class="offcanvas-header">
