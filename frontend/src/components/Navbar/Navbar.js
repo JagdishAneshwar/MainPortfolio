@@ -16,11 +16,11 @@ export default function Navbar(props) {
     });
 
 
-    gsap.to(menuName.current, {
-      y: 0,
-      delay: 2,
-      duration: 1
-    });
+ \\   gsap.to(menuName.current, {
+  \\    y: 0,
+  \\    delay: 2,
+  \\    duration: 1
+  \\  });
   })
 
   return (
@@ -33,7 +33,7 @@ export default function Navbar(props) {
         <li className="nav-item"><a className="btn btn-link menu nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" ref={menuName}>Menu</a></li>
         </ul>
       </nav>
-      <div class="offcanvas offcanvas-end add" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <!--  <div class="offcanvas offcanvas-end add" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
       <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -54,7 +54,7 @@ export default function Navbar(props) {
         </a>
       </nav>
     </div>
-  </div>
+  </div> -->
   </>
   )
 }
