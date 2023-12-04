@@ -134,4 +134,30 @@
         border-top: 1px solid white;
         border-left: none; /* Remove the left border for mobile */
     }
+    .header-icons-github { 
+    display: inline-block;  
+    width: 25px;
+    height: 25px;
+    background: url('https://ik.imagekit.io/Jagdish/icons8-github-500.png?updatedAt=1701076435661') 50% 50% no-repeat;
+    background-size: contain; }
+
+.header-icons-whatsapp { 
+    display: inline-block;  
+    width: 25px;
+    height: 25px;
+    background: url('https://ik.imagekit.io/Jagdish/icons8-whatsapp-500.png?updatedAt=1701076371538') 50% 50% no-repeat;
+    background-size: contain; }
+
+.header-icons-medium { 
+    display: inline-block;  
+    width: 25px;
+    height: 25px;
+    background: url('https://ik.imagekit.io/Jagdish/icons8-medium-500.png?updatedAt=1701076516021') 50% 50% no-repeat;
+    background-size: contain; }
+.header-icons-linkedin { 
+    display: inline-block;  
+    width: 25px;
+    height: 25px;
+    background: url('https://ik.imagekit.io/Jagdish/icons8-linkedin-500.png?updatedAt=1701076489293') 50% 50% no-repeat;
+    background-size: contain; }
 }
