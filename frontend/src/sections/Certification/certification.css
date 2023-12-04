@@ -50,8 +50,8 @@
             cursor: default;
         }
         @media (max-width: 600px) {
-            .certification-title,
-            .certification-issued-by {
+        
+            .certification-issued-date {
             display: none;
             }
         }
