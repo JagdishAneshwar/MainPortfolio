@@ -49,8 +49,12 @@
         #header{
             cursor: default;
         }
-        @media (max-width: 600px) {
-        
+        @media (max-width: 650px) {
+                .certification-section{
+            width: 100%;
+            padding: 1%;
+  
+        }
             .certification-issued-date, .header-certification-issued-date {
             display: none;
             }
