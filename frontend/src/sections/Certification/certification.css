@@ -51,7 +51,7 @@
         }
         @media (max-width: 600px) {
         
-            .certification-issued-date,header-certification-issued-date {
+            .certification-issued-date, .header-certification-issued-date {
             display: none;
             }
         }
