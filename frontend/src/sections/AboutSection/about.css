@@ -113,7 +113,7 @@
 
 @media (max-width: 500px) {
     .about {
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
     }
 
