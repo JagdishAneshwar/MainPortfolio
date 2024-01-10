@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import SplitType from 'split-type';
 import './about.css';
-import Pdf from 'thejagdish.com';
+
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger)
@@ -19,6 +19,8 @@ export default function AboutSec() {
     useRef(null),
     useRef(null),
   ]);
+
+  const Pdf = 'http://thejagdish.com/';
 
   useEffect(() => {
     const descText = new SplitType(aboutDescRef.current, { types: 'words' });
