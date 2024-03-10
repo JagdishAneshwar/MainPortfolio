@@ -11,6 +11,7 @@ app.use(express.json());
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+  useMongoClient:true
 });
 
 app.use('/api/project', cors(), require('./routes/project'))
