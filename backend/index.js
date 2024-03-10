@@ -10,8 +10,7 @@ app.use(express.json());
 // Connect to MongoDB Atlas
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useMongoClient:true
+  useUnifiedTopology: true
 });
 
 app.use('/api/project', cors(), require('./routes/project'))
