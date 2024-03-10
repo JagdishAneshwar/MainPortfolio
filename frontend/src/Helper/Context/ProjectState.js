@@ -10,7 +10,7 @@ const ProjectState = (props) =>{
     const getProject = async () => {
         
         const response = await fetch(
-          "https://main-portfolio-tau-opal.vercel.app/api/project/projectDetails",
+          "https://jagdishs-portfolio-api.vercel.app/api/project/projectDetails",
           {
             method: "GET",
             headers: {
