@@ -10,7 +10,7 @@ const ProjectState = (props) =>{
     const getProject = async () => {
         
         const response = await fetch(
-          "https://portfolio-bfn4.onrender.com/api/project/projectDetails",
+          "main-portfolio-tau-opal.vercel.app/api/project/projectDetails",
           {
             method: "GET",
             headers: {
