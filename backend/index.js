@@ -14,6 +14,7 @@ mongoose.connect('mongodb+srv://aneshwarjagdish:FbhOWfhjTmQMeDe6@trendy.m4fetu3.
 });
 
 app.use('/api/project', cors(), require('./routes/project'))
+app.get('/', cors(), (req, res)=>{ res.json("Hello") })
 
 // Start the server
 
