@@ -192,7 +192,7 @@ export default function ProjectDescription({project}) {
 
 
   })
-
+console.log(project.installation)
   return (
     <div className='project-description-section'>
     <div className="project-description-wrapper">
@@ -202,8 +202,16 @@ export default function ProjectDescription({project}) {
       <tt className="project-detailed-description" ref={projectDetailedDescriptionRef}>{project.projectDescription}</tt>
     </div>
     <div className="project-description"><h4 ref={projectDetailedFeatureTitleRef}>features</h4><tt ref={projectDetailedFeatureRef}>{project.features}</tt></div>
-    <div className="project-description"><h4 ref={projectDetailedInstallationTitleRef}>Installation</h4><tt ref={projectDetailedInstallatioRef}>{project.installation}</tt></div>
-    <div className="project-description"><h4 ref={projectDetailedBackendTitleRef}>Backend Setup</h4><tt ref={projectDetailedBackendRef}>{project.backend}</tt></div>
+    <div className="project-description"><h4>Installation</h4><tt>          <ul>
+            {project.installation.map((step, index) => (
+              <li key={index} className='list-feature'>{step}</li>
+            ))}
+          </ul></tt></div>
+    <div className="project-description"><h4 ref={projectDetailedBackendTitleRef}>Backend Setup</h4><tt /*ref={projectDetailedBackendRef} */><ul>
+            {project.backend.map((step, index) => (
+              <li key={index} className='list-feature'>{step}</li>
+            ))}
+          </ul></tt></div>
     <div className="project-description"><h4 ref={projectDetailedFrontendTitleRef}>Frontend Setup</h4><tt ref={projectDetailedFrontendRef}>{project.frontend}</tt></div>
     <div className="project-description"><h4 ref={projectDetailedTechnologyTitleRef}>Technology</h4><tt ref={projectDetailedTechnologyRef}>{project.technology}</tt></div>
     </div>
