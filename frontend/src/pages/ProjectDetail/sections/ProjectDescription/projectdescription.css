@@ -87,6 +87,10 @@
         margin-top: 5px;
     }
 
+    .list-feature{
+        list-style-type: square;
+    }
+
 @media (max-width:600px){
 
     .project-description-section > .pd-title{
