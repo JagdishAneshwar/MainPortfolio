@@ -52,6 +52,7 @@ router.post('/submit', async (req, res) => {
 app.get("/api/project/projectDetails", async (req, res) => {
   try {
     const projects = await Project.find();  // Fetch from MongoDB
+      console.log(projects)
     if (!projects || projects.length === 0) {
       return res.status(404).json({ error: "No projects found" });
     }
