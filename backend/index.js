@@ -13,8 +13,23 @@ mongoose.connect(process.env.MONGODB_URI, {
   useUnifiedTopology: true
 });
 
-app.use('/api/project', cors(), require('./routes/project'))
-app.get('/', cors(), (req, res)=>{ res.json("Hello") })
+const corsOptions = {
+  origin: "https://www.thejagdish.com", // Allow only your frontend
+  methods: "GET,POST,PUT,DELETE",
+  allowedHeaders: "Content-Type,Authorization"
+};
+
+// Apply CORS globally
+app.use(cors(corsOptions));
+app.use(express.json());
+
+// Routes
+app.use('/api/project', require('./routes/project'));
+
+app.get('/', (req, res) => { 
+  res.json("Hello, CORS is working!");
+});
+
 
 // Start the server
 
