@@ -49,16 +49,18 @@ router.post('/submit', async (req, res) => {
   });
   
   // Fetch project details
-router.get('/projectDetails', async (req, res) => {
-      try {
-        const projects = await Project.find();
-        
-        res.status(200).json(projects);
-      } catch (error) {
-        console.error('Error while fetching project details:', error);
-        res.status(500).json({ error: 'Error while fetching project details' });
-      }
-    });
+app.get("/api/project/projectDetails", async (req, res) => {
+  try {
+    const projects = await Project.find();  // Fetch from MongoDB
+    if (!projects || projects.length === 0) {
+      return res.status(404).json({ error: "No projects found" });
+    }
+    res.json(projects);
+  } catch (error) {
+    res.status(500).json({ error: "Server error" });
+  }
+});
+
 
 
 
