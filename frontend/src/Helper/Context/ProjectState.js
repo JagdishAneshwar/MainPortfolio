@@ -14,10 +14,9 @@ const ProjectState = (props) =>{
           {
             method: "GET",
             headers: {
-              "Content-Type": "application/json",
-              "Access-Control-Allow-Origin": "*"
-
+              "Content-Type": "application/json"
             },
+            mode: "cors"
           }
         );
         const json = await response.json();
